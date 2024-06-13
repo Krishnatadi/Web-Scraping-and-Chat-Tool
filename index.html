@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Scraping Tool</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Web Scraping Tool</h1>
+        <input type="text" id="urlInput" placeholder="Enter URL" />
+        <input type="text" id="selectorInput" placeholder="Enter CSS Selector (optional)" />
+        <button id="scrapeButton">Scrape Content</button>
+        <button id="clearButton">Clear</button>
+        <div id="errorMessage"></div>
+        <div id="loadingMessage">Loading...</div>
+        <div id="outputContainer">
+            <h2 id="scrapedContentHeader" style="display: none;">Scraped Content:</h2>
+            <button id="copyButton">Copy to Clipboard</button>
+            <pre id="outputText"></pre>
+        </div>
+    </div>
+        <!-- Footer -->
+        <footer style="text-align: center; margin-top: 20px;">
+            <p>&copy; 2024 All rights reserved | Developed by Krish</p>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
